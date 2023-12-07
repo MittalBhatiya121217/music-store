@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Instrument Store</title>
     <style>
-        body {
+         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
@@ -65,8 +65,14 @@
             padding: 10px;
             margin: 10px;
         }
-    </style>
 
+        /* Add a style for the label with improved contrast */
+        #search-label {
+            color: #000; /* Black text color */
+            background-color: #fff; /* White background color */
+            padding: 5px; /* Adjust padding as needed */
+        }
+    </style>
 </head>
 <body>
 
@@ -82,7 +88,8 @@
     </nav>
 
     <section id="search-bar">
-        <label for="search-input">Search instruments:</label>
+        <!-- Use the improved contrast label style -->
+        <label id="search-label" for="search-input">Search instruments:</label>
         <input type="text" id="search-input" placeholder="Search instruments...">
         <button>Search</button>
     </section>
@@ -98,7 +105,7 @@
         <button>Apply Filter</button>
     </section>
 
-  <section class="product">
+     <section class="product">
         <img src="guitar.jpg" alt="Guitar">
         <h2>Guitar</h2>
         <p>Description of the guitar. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
