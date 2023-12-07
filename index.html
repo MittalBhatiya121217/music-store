@@ -5,8 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Instrument Store</title>
     <style>
-        /* Your existing styles remain unchanged */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg'); /* Replace with your background image */
+            background-size: cover;
+            color: #fff;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+        }
+
+        #search-bar {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #filter {
+            padding: 10px;
+            margin: 10px;
+        }
     </style>
+
 </head>
 <body>
 
@@ -38,9 +98,18 @@
         <button>Apply Filter</button>
     </section>
 
-    <section class="product">
-        <!-- Your existing product section remains unchanged -->
+  <section class="product">
+        <img src="guitar.jpg" alt="Guitar">
+        <h2>Guitar</h2>
+        <p>Description of the guitar. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <audio controls>
+            <source src="guitar_audio.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+        <p>$500</p>
+        <button>Add to Cart</button>
     </section>
+
 
     <!-- Add more product sections as needed -->
 
