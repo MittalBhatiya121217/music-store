@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Instrument Store</title>
     <style>
-         body {
+        body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
@@ -66,8 +66,13 @@
             margin: 10px;
         }
 
-        /* Add a style for the label with improved contrast */
+
         #search-label {
+            color: #000; /* Black text color */
+            background-color: #fff; /* White background color */
+            padding: 5px; /* Adjust padding as needed */
+        }
+        #category-label {
             color: #000; /* Black text color */
             background-color: #fff; /* White background color */
             padding: 5px; /* Adjust padding as needed */
@@ -88,14 +93,14 @@
     </nav>
 
     <section id="search-bar">
-        <!-- Use the improved contrast label style -->
         <label id="search-label" for="search-input">Search instruments:</label>
         <input type="text" id="search-input" placeholder="Search instruments...">
         <button>Search</button>
     </section>
 
     <section id="filter">
-        <label for="category">Category:</label>
+        <!-- Use the improved contrast label style -->
+        <label id="category-label" for="category">Category:</label>
         <select id="category">
             <option value="guitar">Guitar</option>
             <option value="piano">Piano</option>
@@ -105,7 +110,7 @@
         <button>Apply Filter</button>
     </section>
 
-     <section class="product">
+  <section class="product">
         <img src="guitar.jpg" alt="Guitar">
         <h2>Guitar</h2>
         <p>Description of the guitar. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -116,7 +121,6 @@
         <p>$500</p>
         <button>Add to Cart</button>
     </section>
-
 
     <!-- Add more product sections as needed -->
 
